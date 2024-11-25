@@ -4,10 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Side Bar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="side-bar">
-        <h1>Side bar</h1>
+    <i class="fa-solid fa-bars menu-icon" id="menu-icon" onclick="openSideBar()"></i>
+    <div class="side-bar" id="side-bar">
+      <i class="fa-solid fa-xmark close-icon" onclick="closeIcon()"></i>
+
+      <div class="item" id="first-item">
+        <i class="fa-solid fa-house icon-style"></i>
+        <h3 class="item-name">Dashboard</h3>
+      </div>
+
+      <div class="item">
+        <i class="fa-solid fa-user icon-style"></i>
+        <h3 class="item-name">Accounts</h3>
+      </div>
+
+      <div class="item">
+        <i class="fa-solid fa-credit-card icon-style"></i>
+        <h3 class="item-name">Cards</h3>
+      </div>
+
+      <div class="item">
+        <i class="fa-solid fa-tag icon-style"></i>
+        <h3 class="item-name">Transaction</h3>
+      </div>
+
+      <div class="item">
+        <i class="fa-solid fa-user-minus icon-style"></i>
+        <h3 class="item-name">Payees</h3>
+      </div>
+
+      <div class="item">
+        <i class="fa-solid fa-boxes-stacked icon-style"></i>
+        <h3 class="item-name">Spend Groups</h3>
+      </div>
+
+      <div class="item">
+        <i class="fa-solid fa-circle-half-stroke icon-style"></i>
+        <h3 class="item-name">Integration</h3>
+      </div>
+
+      <div class="item">
+        <i class="fa-solid fa-box icon-style"></i>
+        <h3 class="item-name">Invoices</h3>
+      </div>
+
+        
     </div>
+
+
+
+    <script src="https://kit.fontawesome.com/9e04791103.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 </html>
